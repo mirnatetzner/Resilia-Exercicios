@@ -1,0 +1,17 @@
+
+@media (max-width:700px){
+    .cabeca-navegacao{
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+    
+    .cabeca-metade{
+        display: none;
+    }
+    .cabeca-metade-2{
+        flex-wrap: wrap;
+        flex-flow: column;
+    }
+
+}

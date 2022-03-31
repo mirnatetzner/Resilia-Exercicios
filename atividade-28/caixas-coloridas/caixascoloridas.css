@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.um {
+
+background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: justify center;
+    font-family: 'Georgia'
+    
+    
+}
+
+.dois{
+
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    text-align: justify center;
+    font-family: 'Georgia'
+    
+    
+
+}
+
+
+.tres{
+background-color: green;
+    width: 100px;
+    height: 100px;
+    text-align: justify center;
+    font-family: 'Georgia'
+    
+    
+
+}
+
+.quatro{
+background-color: blue;
+    width: 100px;
+    height: 100px;
+    text-align: justify center;
+    font-family: 'Georgia'
+       
+}
+
+.linha{
+    
+   display: inline-block;
+   text-align: center;
+
+
+}
