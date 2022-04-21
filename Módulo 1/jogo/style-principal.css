@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%; 
+    height: 100%;
+
+}
+
+@font-face {
+    font-family: "pieces-of-eight" ;
+    src: url(./font/Pieces\ of\ Eight.ttf);
+ }
+
+
+body{
+    background-image: url('./img/party.gif');
+    background-size: cover;
+    
+}
+
+h1{
+    font-family: "pieces-of-eight";
+    color: rgb(148, 11, 11);
+    text-shadow: 2px 2px rgb(247, 244, 244) ; 
+    font-size: 5rem;
+}
+h2{
+    font-family: "pieces-of-eight";
+    text-shadow: 2px 2px rgb(247, 244, 244) ; 
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "pieces-of-eight";
+    font-size: 25px;
+
+}
+
+.game-window{
+    height: 80vh;
+    border-radius: 20px;
+    margin: 3rem 5rem 3rem 5rem; 
+    background-color: rgba(253, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.conteudo-menu{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.story-game{
+    width: fit-content;
+    margin: 1rem;
+    background-color: rgba(148, 11, 11, 0.7);
+    border-radius: 6px;
+    
+
+}
+
+.textos-display{
+    display: flex;
+    flex-direction: row;
+    
+
+
+}
+
+#box-text-beggin{
+    font-size: 20x;
+    width: 35vw;
+    color: #ffff;
+    text-align: justify;
+    line-height: 4vh;
+    text-indent: 3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin: 3rem;
+
+}
+
+
+.caixa-de-botoes{
+    width: 80%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botao{
+    font-family: pieces-of-eight;
+    font-size: 25px;
+    width: 10rem;
+    padding: 1rem;
+    color: #ffff;
+    background-color: rgba(148, 11, 11, 0.7);
+
+}
+
+.botao:hover,
+.botao:focus{
+  background-color: #611c1c;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.botao:hover {
+  transform: translateY(-1px);
+}
+
+
+
+.choose-character{
+    width: 80vw;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+}
+
+.personagem{
+    width: 15rem;
+    height: 60vh;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    
+}
+
+.personagem:hover{
+    transform: translateY(-15px);
+    
+}
+
+.top-card{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-personagem{
+    margin: 5px;
+    text-align: center;
+    text-justify: inter-word;
+    
+}
+
+
+.quadradinho-imagem-marceline{
+    width: 7rem;
+    height: 7rem;
+    border: rgb(158, 31, 31) groove 7px;
+    border-radius: 6px;
+    background-image: url(./img/marceline-perfil.png);
+    
+}
+
+#card-marceline{
+    background-color: rgb(158, 31, 31,0.6);
+}
+
+
+.quadradinho-imagem-jake{
+    width: 7rem;
+    height: 7rem;
+    border: rgb(255, 251, 17) groove 7px;
+    border-radius: 6px;
+    background-image: url(./img/jake-perfil.png);
+
+}
+
+#card-jake{
+    background-color: rgb(255, 251, 17,0.6);
+}
+
+.quadradinho-imagem-rei-gelado{
+    width: 7rem;
+    height: 7rem;
+    border: rgb(42, 31, 202) groove 7px;
+    border-radius: 6px;
+    background-image: url(./img/rei-gelado-perfil.png);
+
+}
+
+#card-rei-gelado{
+    background-color: rgb(42, 31, 202, 0.6);
+
+}
+
+.texto-descricao{
+    width: 90%;
+    height: 250px;
+    margin: 8px;
+    border-radius: 6px;
+    background-color: rgb(250, 235, 215,0.6);
+    
+}
+
+h4{
+    text-align: justify;
+    text-indent: 2rem;   
+    margin: 1rem;
+    color: black;
+    font-size: 15px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    line-height: 2vh;
+    
+}
+
+
+.botao-choose{
+    margin: 2rem;
+    padding: 1rem;
+    border: 3px;
+    border-radius: 5px;
+
+}
+
+
+/* falta ajustar layout dos cards e botoes */
