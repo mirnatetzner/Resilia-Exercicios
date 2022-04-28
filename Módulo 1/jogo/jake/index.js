@@ -1,13 +1,23 @@
 
 
+var inicio = document.getElementById('caixa-da-etapa-inicio'); 
+inicio.style.display="flex";
 
-function adicionarItem(){
-    var answer = prompt("Marceline deve? <br> 1 - Ajudar a combater?", "2 - Salvar quem importa?");
+var botaoProximo = document.getElementById('proxima-etapa'); 
+botaoProximo.onclick = function () {
+    // pergunta pela primeira vez.
+    var answer = prompt("O que Jake faz? \n1 - Vai embora sozinho \n2 - Decide ajudar todos");
+    // enquanto a pessoa não repsonde com 1 ou 2, continua perguntando.
+    while (answer!=1 && answer!=2){
+        var answer = prompt("O que Jake faz? \n1 - Vai embora sozinho \n2 - Decide ajudar todos");
+    } 
+    // vai para cada arquivo depois que a pessoa respondeu corretamente.
     if (answer == 1) {
-        alert("O uso do prompt foi cancelado!");
-    } else {
-        var itens = document.getElementById("itens");
-        var option = document.createElement("option");
-       
+        window.location.href = '../jake/final/gameover.html';
+    } else if (answer == 2) {
+        window.location.href = '../jake/etapa-um/index-um.html';
     }
 }
+
+
+

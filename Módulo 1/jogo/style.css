@@ -6,18 +6,20 @@
 body, html {
     width: 100%; 
     height: 100%;
-
+    
 }
 
 @font-face {
     font-family: "pieces-of-eight" ;
     src: url(./font/Pieces\ of\ Eight.ttf);
- }
+}
 
 
 body{
     background-image: url('./img/party.gif');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
@@ -25,34 +27,63 @@ h1{
     font-family: "pieces-of-eight";
     color: rgb(148, 11, 11);
     text-shadow: 2px 2px rgb(247, 244, 244) ; 
-    font-size: 5rem;
+    font-size: 12vh;
 }
 h2{
     font-family: "pieces-of-eight";
     text-shadow: 2px 2px rgb(247, 244, 244) ; 
-    font-size: 3rem;
+    font-size: 5vh;
 }
 
 h3{
     font-family: "pieces-of-eight";
-    font-size: 25px;
+    font-size: 4vh;
+    margin: 0.5rem;
+    
+}
 
+h4{
+    font-size: 2vh;
+}
+
+
+
+header{
+    height: 3rem;
+}
+
+.content-holder{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
 }
 
 .game-window{
-    height: 80vh;
+    height: fit-content;
+    width: max-content;
     border-radius: 20px;
-    margin: 3rem 5rem 3rem 5rem; 
+    margin: 3% 5% 3% 5%; 
     background-color: rgba(253, 255, 255, 0.7);
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
 }
+.main-menu{
+    display: table;
+    box-sizing: inherit;
+    height: 100%;
+    column-width: auto;
+ }
 
 
 .conteudo-menu{
-    height: 75vh;
+    height: fit-content;
+    width: max-content;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,30 +93,32 @@ h3{
 
 .story-game{
     width: fit-content;
-    margin: 1rem;
+    margin: 2rem;
     background-color: rgba(148, 11, 11, 0.7);
     border-radius: 6px;
-    
 
 }
 
+
+
 .textos-display{
+    width: 100%;
     display: flex;
     flex-direction: row;
     
-
-
 }
 
+
 #box-text-beggin{
+    display: flex;
     font-size: 20x;
-    width: 35vw;
+    width: 40vw;
     color: #ffff;
     text-align: justify;
     line-height: 4vh;
     text-indent: 3rem;
     font-family: 'Arial Narrow Bold', sans-serif;
-    margin: 3rem;
+    margin: 2rem;
 
 }
 
@@ -96,6 +129,61 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 400px){
+
+.game-window{
+    background-color: rgba(253, 255, 255, 0.8);
+}
+
+
+.caixa-de-botoes{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textos-display{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+    
+    }
+.choose-character{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 13px;
+}
+p{
+    font-size: 13px;
+}
+#box-text-beggin{
+    margin: 1rem;
+}
+#box-text-beggin{
+    width:70%;
+}
+.story-game{
+    width: 60vw;
+}
+
+
+
 }
 
 .botao{
@@ -118,8 +206,6 @@ h3{
   transform: translateY(-1px);
 }
 
-
-
 .choose-character{
     width: 80vw;
     display: none;
@@ -131,16 +217,18 @@ h3{
 }
 
 .personagem{
-    width: 15rem;
-    height: 60vh;
+    width: fit-content;
+    height: fit-content;
     margin: 3rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
     
 }
+
 
 .personagem:hover{
     transform: translateY(-15px);
@@ -156,7 +244,7 @@ h3{
 }
 
 .nome-personagem{
-    margin: 5px;
+    margin: 1vw;
     text-align: center;
     text-justify: inter-word;
     
@@ -205,33 +293,43 @@ h3{
 }
 
 .texto-descricao{
-    width: 90%;
-    height: 250px;
-    margin: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin: 1.5rem;
     border-radius: 6px;
     background-color: rgb(250, 235, 215,0.6);
     
 }
 
 h4{
-    text-align: justify;
-    text-indent: 2rem;   
+    text-align: center;
     margin: 1rem;
     color: black;
-    font-size: 15px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-family: pieces-of-eight;
     line-height: 2vh;
     
 }
 
 
 .botao-choose{
-    margin: 2rem;
-    padding: 1rem;
-    border: 3px;
-    border-radius: 5px;
+    font-family: pieces-of-eight;
+    font-size: 18px;
+    width: 5rem;
+    padding: 4px;
+    margin: 0.7rem;
+    color: rgb(5, 5, 5);
+    background-color: rgba(250,250,250, 0.8);
+    border-radius: 10px;
 
 }
+
+.botao-choose:hover,
+.botao-choose:focus{
+  background-color: #ff5e00;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
 
 
 /* falta ajustar layout dos cards e botoes */
