@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/matrix" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Codifica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Codificação</h1>
+    </header>
+
+    <div id="main_content">
+        <p>Digite aqui sua mensagem:</p>
+        <textarea name="message" id="msg" cols="35" rows="3"></textarea>
+        <p>Selecione o Tipo de Codificação: </p>
+        <div style="margin-bottom: 3px;">
+            <input type="radio" name="tipo_codific" id="base64" checked>
+            <label for="base64"> Base 64</label>
+            <input type="radio" name="tipo_codific" id="cifraDeCesar">
+            <label for="cifraDeCesar"> Cifra de César</label>
+        </div>
+        <div id="incremento">
+            <!--Aqui vai aparecer a caixa de incremento quando selecionada a Cifra de César-->
+        </div>
+
+        <p>Selecione se codifica ou decodifica: </p>
+
+        <div class="radioButton">
+            <div>
+                <input type="radio" name="bola" value="codificar" id="codificar">
+                <label for="codificar">
+                    Codificar</label>
+            </div>
+            <div>
+                <input type="radio" name="bola" value="decodificar" id="decodificar">
+                <label for="codificar">
+                    Decodificar</label>
+            </div>
+        </div>
+        <div id="button_container">
+            <!-- aqui vem o innerHTML -->
+        </div>
+        <div id="answer">
+            <!--Aqui vai aparecer a resposta da codificação ou decodificação-->
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <footer>
+        <nav class="navegacao">
+            <p class="copyright">&copy; Mirna Tetzner</p>
+            <div class="links">
+                <a href="https://github.com/mirnatetzner">GitHub</a>
+            </div>
+    
+            <div class="links">
+                <a href="https://www.linkedin.com/in/mirnatetzner/">LinkedIn</a>
+            </div>
+            <div class="links">
+                <a
+                    href="https://www.canva.com/design/DAE_GyNV4AM/k34rAxYnkvyu2mI5h3869w/view?utm_content=DAE_GyNV4AM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Currículo</a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

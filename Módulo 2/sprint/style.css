@@ -1,0 +1,127 @@
+
+@import url('http://fonts.cdnfonts.com/css/matrix');
+
+                
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-style: oblique;
+    color: rgb(9, 221, 37);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-style: oblique;
+}
+
+h1{
+    font-size: 25px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(9, 221, 37);
+    font-family: 'Matrix', sans-serif;
+}
+
+#main_content{
+    display: flex;
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border: 5px rgb(12, 46, 15) solid;
+    position: relative;
+}
+
+
+textarea{
+    background-color: black;
+    color: rgb(51, 223, 17);
+    border: 0px;
+    font-family: sans-serif;
+    width: 50%;
+    border: 1px white solid;
+    margin: 5px;
+}
+
+#answer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#escolhaCodigo{
+    display: flex;
+    background-color: black;
+    color: rgb(51, 223, 17);
+}
+
+p{
+    border: 2px;
+}
+
+#incre{
+    background-color: black;
+    color: rgb(51, 223, 17);
+    border:2px #16630f solid;
+}
+
+button{
+    font-style: oblique;
+    font-family: pieces-of-eight;
+    font-size: 15px;
+    width: 8rem;
+    padding: 5px;
+    margin: 10px;
+    color: #ffff;
+    background-color: black;
+
+}
+
+button:hover,
+button:focus{
+  background-color: #16630f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+
+/* config do footer */
+.navegacao{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.links{
+    margin: 2rem;
+    color: black;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
